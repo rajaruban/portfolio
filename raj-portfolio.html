@@ -129,6 +129,7 @@ h6:hover{
   opacity:0.85;
   color: white;
   transition: 0.25s all ease-in-out;
+  height: 35vh;
 }
 
 .nav-link{
@@ -320,7 +321,21 @@ img:hover{
 
       </div>
     </div></nav>
-    <div class="container" id="titleDiv1">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container" id="titleDiv1">
     <button style="width:100%;" class="titleDivs" id="titleSetting1" aria-pressed="true" role="button">
       <h1 class="text-center title-text m-5">ABOUT ME <i class="fas fa-address-card"></i></h1>
     </button></div>
@@ -363,10 +378,9 @@ img:hover{
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-  <div class="container" id="titleDiv2">
+     </div>
+    <div class="carousel-item">
+      <div class="container" id="titleDiv2">
     <button style="width:100%;" class=" titleDivs" id="titleSetting2" aria-pressed="true" role="button">
       <h1 class="text-center title-text m-5">FRONTEND STUFFS <i class="fas fa-laptop-code"></i></h1>
     </button></div>
@@ -400,7 +414,9 @@ img:hover{
       </div>
     </div>
   </div>
-    <div class="container" id="titleDiv3">
+    </div>
+    <div class="carousel-item">
+      <div class="container" id="titleDiv3">
       <button style="width:100%;" class="titleDivs" id="titleSetting3" aria-pressed="true" role="button">
         <h1 class="text-center title-text m-5">BACKEND STUFFS <i class="fas fa-database"></i></h1>
       </button></div>
@@ -425,7 +441,9 @@ img:hover{
           </div>
         </div>
       </div>
-      <div class="container" id="titleDiv4">
+    </div>
+    <div class="carousel-item">
+       <div class="container" id="titleDiv4">
         <button style="width:100%;" class="titleDivs" id="titleSetting4" aria-pressed="true" role="button">
           <h1 class="text-center title-text m-5">LARAVEL STUFFS <i class="fab fa-laravel"></i></h1>
         </button></div>
@@ -447,7 +465,8 @@ img:hover{
               </div>
             </div>
           </div>
-
+    </div>
+    <div class="carousel-item">
       <div class="container" id="titleDiv5">
       <button style="width:100%;" class="titleDivs" id="titleSetting5" aria-pressed="true" role="button">
         <h1 class="text-center title-text m-5">JAVASCRIPTS <i class="fas fa-laptop-code"></i></h1>
@@ -483,8 +502,9 @@ img:hover{
             </div>
           </div>
         </div>
-
-        <div class="container" id="titleDiv6">
+    </div>
+    <div class="carousel-item">
+      <div class="container" id="titleDiv6">
               <button style="width:100%;" class="titleDivs" id="titleSetting6" aria-pressed="true" role="button">
                 <h1 class="text-center title-text m-5">EDUCATION <i class="fas fa-university"></i></h1>
               </button></div>
@@ -621,9 +641,9 @@ img:hover{
               </div>
             </div>
           </div>
-
-
-          <div class="container" id="titleDiv7">
+    </div>
+    <div class="carousel-item">
+      <div class="container" id="titleDiv7">
             <button style="width:100%;" class="titleDivs" id="titleSetting7" aria-pressed="true" role="button">
               <h1 class="text-center title-text m-5">SKILLS <i class="fas fa-tools"></i></h1>
             </button></div>
@@ -654,8 +674,9 @@ img:hover{
                     <p><button id="clickView7" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide this segment <i class="fas fa-arrow-up"></i></button></p>
                   </div>
                 </div>
-
-              <div class="container" id="titleDiv8">
+    </div>
+    <div class="carousel-item">
+      <div class="container" id="titleDiv8">
               <button style="width:100%;" class="titleDivs" id="titleSetting8" aria-pressed="true" role="button">
                 <h1 class="text-center title-text m-5">EXPERIENCE <i class="fas fa-briefcase"></i></h1>
               </button></div>
@@ -715,12 +736,20 @@ img:hover{
                      </div>
                    </div>
 
-                     <div class="container">
-
-                     </div>
                    </div>
 
                  </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
                  <div class="container p-3"><button onclick="topFunction()" class="btn btn-secondary my-1 glow-button"  id="myBtn" title="Go to top">⏎ Go to top</button></div>
 
