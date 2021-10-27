@@ -261,6 +261,12 @@ img:hover{
   color:  lightslategray;
   opacity: 1;
 }
+#slideLeft{
+  margin-left: -6vw;
+}
+#slideRight{
+  margin-right: -6vw;
+}
 </style>
 
 
@@ -743,11 +749,11 @@ img:hover{
                  </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button id="slideLeft" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button id="slideRight" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
