@@ -22,7 +22,8 @@
 
   <style type="text/css">
   @media only screen and (max-width: 800px){
-    #titleSetting1, #titleSetting2,#titleSetting3,#titleSetting4,#titleSetting5,#titleSetting6, #titleSetting7, #titleSetting8{
+    #titleSetting1, #titleSetting2,#titleSetting3,#titleSetting4,#titleSetting5,#titleSetting6, #titleSetting7, 
+    #titleSetting8, #titleSetting9{
     height: 45vh;
     width: 45vh;
     border-radius: 25px;
@@ -60,6 +61,10 @@
     }
     #footer1{
       width: auto;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+      position: absolute;
+      left:0% !important;
     }
   }
 
@@ -241,12 +246,12 @@ img:hover{
   color: white;
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
-#toggle,#toggle1,#toggle2,#toggle3,#toggle4,#toggle5 {
+#toggle,#toggle1,#toggle2,#toggle3,#toggle4,#toggle5,#toggle6, #toggle7 {
   width:100%;
   transition: 0.5s all ease-in-out;
   border-radius: 20px;
 }
-#toggle:hover,#toggle1:hover,#toggle2:hover,#toggle3:hover,#toggle4:hover,#toggle5:hover, {
+#toggle:hover,#toggle1:hover,#toggle2:hover,#toggle3:hover,#toggle4:hover,#toggle5:hover, #toggle6:hover,#toggle7:hover{
   font-weight: bold;
   color: white;
   opacity: 1;
@@ -256,14 +261,15 @@ img:hover{
   font-family: 'Black Ops One', cursive;
   text-align: center;
 }
-#titleSetting1, #titleSetting2,#titleSetting3,#titleSetting4,#titleSetting5,#titleSetting6, #titleSetting7, #titleSetting8{
+#titleSetting1, #titleSetting2,#titleSetting3,#titleSetting4,#titleSetting5,#titleSetting6, #titleSetting7, 
+#titleSetting8,#titleSetting9{
   background-color: transparent;
   font-weight: bold;
   color: white;
   opacity: 1;
   transition: 0.25s all ease-in-out;
 }
-#titleSetting1:hover, #titleSetting2:hover, #titleSetting3:hover, #titleSetting4:hover,#titleSetting5:hover,#titleSetting6:hover,#titleSetting7:hover, #titleSetting8:hover{
+#titleSetting1:hover, #titleSetting2:hover, #titleSetting3:hover, #titleSetting4:hover,#titleSetting5:hover,#titleSetting6:hover,#titleSetting7:hover, #titleSetting8:hover,#titleSetting9:hover{
   font-weight: bold;
   background-color: white;
   color:  lightslategray;
@@ -288,11 +294,15 @@ img:hover{
   font-weight: bold;
 }
 #carouselIndi{
-width: 2vh;
-height: 2vh;
-border-radius: 50%;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  position: absolute;
+  left: -60%;
+}
 </style>
 
 
@@ -302,13 +312,12 @@ border-radius: 50%;
 
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a id="text1" class="navbar-brand" href="#"><strong>RAJARUBAN CR</strong><br><p id="tag1"><em>Consumer Banking Professional | Software Developer</em></p></a>
+      <a id="text1" class="navbar-brand" href="#"><strong>RAJARUBAN CR</strong><br><p id="tag1"><em>{The FrontEnd Developer}</em></p></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About</a>
@@ -344,15 +353,12 @@ border-radius: 50%;
 
               <li><a class="dropdown-item" href="https://github.com/rubanero14" style="font-family: 'DM Sans', sans-serif;">GitHub <i class="fab fa-github"></i></a></li>
 
-              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" style="font-family: 'DM Sans', sans-serif;">Codepen JS projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+              <li><a class="dropdown-item" href="https://codepen.io/rubanero14/pens/public" style="font-family: 'DM Sans', sans-serif;">Codepen FrontEnd projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
                 <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
               </svg></a></li>
-
             </ul>
           </li>
-
         </ul>
-
       </div>
     </div></nav>
 
@@ -482,16 +488,47 @@ border-radius: 50%;
       </div>
     </div>
     <div class="carousel-item">
+       <div class="container" id="titleDiv9">
+        <button style="width:100%;" class="titleDivs" id="titleSetting9" aria-pressed="true" role="button">
+          <h1 class="text-center title-text m-5">MOBILE APP DEVELOPMENT <i class="fa fa-mobile" aria-hidden="true"></i></h1>
+        </button></div>
+        <div class="container-fluid" id="mobileApps" style="display: none">
+          <div class="container p-3" id="boardSetting">
+            <h1 id="mobileAppsProject" class="p-4">MOBILE APP PROJECTS <i class="fa fa-mobile" aria-hidden="true"></i></h1>
+            <div class="row">
+              <div class="col-8">
+                <p>Those are the Mobile App projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
+                <button id="toggle6" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
+                <br><br>
+                <ul id="dropitem7" style="display:none;">
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/movie-search-app-flutter">Movie Search App - Flutter</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/movie-search-app">Movie Search App - React Native</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/loan-calculator-reactnative">Loan Calculator - React Native </a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/bmi-calculator-reactnative">BMI Calculator - React Native</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/quiz-app-react-native">Computer Science Quiz Game App - React Native</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/to-do-reactnative">To-Do App - React Native</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/to-do-flutter">To-Do App - Flutter</a></li>
+                  <li><a style="text-decoration: none" href="https://github.com/rubanero14/emergency-contact-app-flutter">Emergency Contact App - Flutter</a></li>
+                </ul>
+                <p><button id="clickView9" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
+              </div>
+              <div class="col-4">
+                <img src="https://ms314006.github.io/static/b7a8f321b0bbc07ca9b9d22a7a505ed5/97b31/React.jpg" alt="moblie app projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="carousel-item">
        <div class="container" id="titleDiv4">
         <button style="width:100%;" class="titleDivs" id="titleSetting4" aria-pressed="true" role="button">
-          <h1 class="text-center title-text m-5">LARAVEL STUFFS <i class="fab fa-laravel"></i></h1>
+          <h1 class="text-center title-text m-5">FULL STACK STUFFS <i class="fab fa-laravel"></i></h1>
         </button></div>
         <div class="container-fluid" id="phplaravel" style="display: none">
           <div class="container p-3" id="boardSetting">
-            <h1 id="laravelproject" class="p-4">PHP/LARAVEL BASED PROJECTS <i class="fab fa-laravel"></i></h1>
+            <h1 id="laravelproject" class="p-4">FULL STACK PROJECTS <i class="fab fa-laravel"></i></h1>
             <div class="row">
               <div class="col-8">
-                <p>Those are the PHP/Laravel projects and tasks that I have self-learn via self-practice with publicly available courses and bootcamps. Kindly go through each of it in the links below;</p>
+                <p>Those are the Full-Stack projects and tasks that I have self-learn via self-practice with publicly available courses and bootcamps. Kindly go through each of it in the links below;</p>
                 <button id="toggle4" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
                 <br><br>
                 <ul id="dropitem5" style="display:none;">
@@ -961,11 +998,29 @@ var vm1 = document.getElementById("toggle");
         targetDiv6.style.display = "none";
         document.getElementById("toggle6").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
         vm7.style.background = "mediumseagreen";
+        bv9.style.display = "none"
 
       } else {
         targetDiv6.style.display = "block";
         document.getElementById("toggle6").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
         vm7.style.background = "#357EC7";
+        bv9.style.display = "block"
+      }
+    };
+
+     //td7
+    var targetDiv7 = document.getElementById("dropitem8");
+    var vm8 = document.getElementById("toggle7");
+    vm8.onclick = function(){
+      if (targetDiv7.style.display !== "none"){
+        targetDiv7.style.display = "none";
+        document.getElementById("toggle7").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
+        vm7.style.background = "mediumseagreen";
+
+      } else {
+        targetDiv7.style.display = "block";
+        document.getElementById("toggle7").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
+        vm8.style.background = "#357EC7";
       }
     };
   </script>
@@ -1147,7 +1202,7 @@ var vm1 = document.getElementById("toggle");
     var cv8 = document.getElementById("titleSetting8");
     var tdiv8 = document.getElementById("titleDiv8");
     var bv8 = document.getElementById("clickView8");
-    cv8.onclick = function employmentDetails(){
+    cv8.onclick = function(){
       if (sm8.style.display !== "none"){
         sm8.style.display = "none";
         tdiv8.style.display = "block";
@@ -1167,6 +1222,32 @@ var vm1 = document.getElementById("toggle");
       }
     };
 
+//ninth set
+    var sm9 = document.getElementById("mobileApps");
+    var cv9 = document.getElementById("titleSetting9");
+    var tdiv9 = document.getElementById("titleDiv9");
+    var bv9 = document.getElementById("clickView9");
+    cv9.onclick = function(){
+      if (sm9.style.display !== "none"){
+        sm9.style.display = "none";
+        tdiv9.style.display = "block";
+      } else {
+        sm9.style.display = "block";
+        tdiv9.style.display = "none";
+      }
+    };
+    bv9.onclick= function(){
+      if (sm9.style.display !== "none"){
+        sm9.style.display = "none";
+        tdiv9.style.display = "block";
+        bv9.style.display = "none"
+      } else {
+        sm9.style.display = "block";
+        tdiv9.style.display = "none";
+      }
+    };
+
+//Contact set
     var cm = document.getElementById("contactMe");
     var ci = document.getElementById("contactInfo");
      cm.onclick = function contactDetails(){
@@ -1182,6 +1263,7 @@ var vm1 = document.getElementById("toggle");
         cm.style.removeProperty('visibility');
       }
     };
+
 
   </script>
 </div></body></html>
